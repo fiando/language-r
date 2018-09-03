@@ -170,3 +170,9 @@
   'Na.omit':
     'prefix': 'nao'
     'body': 'na.omit(${0:})'
+  'Repeat':
+    'prefix': 'rp'
+    'body': 'repeat {\n \t#print(i)\n \tcnt <- i+1\n \tif(i ${1:>} ${2:}) {\n \t\tbreak\n \t}\n }'
+  'While':
+    'prefix': 'wh'
+    'body': 'while (i ${1:<} ${2:}) {\n \t#print(i)\n \ti = ${3:}\n }'    
